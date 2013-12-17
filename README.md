@@ -2,7 +2,9 @@ vim-configuration
 =================
 
 Filename: .vimrc
+
 Maintainer: Juan Luis J. Rumí
+
 Vastly inspired on:
   - https://gist.github.com/JeffreyWay/6753834
   - https://github.com/michaeljsmalley/dotfiles/blob/master/vimrc
