@@ -25,27 +25,35 @@ set smartcase       " ignore case if search pattern is all lowercase,
 set visualbell      " don't beep
 set noerrorbells    " don't beep
 set autowrite       " Save on buffer switch
-set mouse=a
 highlight Search cterm=underline
 set backupdir=~/.vim/backup//   " Swap files out of the project root
 set directory=~/.vim/swap//
 set timeout timeoutlen=200 ttimeoutlen=100
+set mouse-=a        " Avoid mouse interaction
 
 ""
 " Theme / Colors
 ""
-set t_Co=256
-colorscheme xoria256
+if !has("gui_running")
+    let g:solarized_termtrans=1
+    let g:solarized_termcolors=256
+    let g:solarized_visibility = "high"
+    let g:solarized_contrast = "high"
+endif
 syntax on
+colorscheme solarized
+set background=dark
 
 ""
 " Bundles with Vundle: https://github.com/gmarik/vundle
 ""
-filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+filetype off    " Required
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 Bundle 'gmarik/vundle'
 Bundle 'bling/vim-airline'
+Bundle 'scrooloose/nerdtree'
+call vundle#end()
 filetype plugin indent on
  
 ""
@@ -54,7 +62,7 @@ filetype plugin indent on
 set guioptions-=T               " Removes top toolbar
 set guioptions-=r               " Removes right hand scroll bar
 set go-=L                       " Removes left hand scroll bar
-set linespace=15
+set linespace=10
 set showmode                    " always show what mode we're currently editing in
 set nowrap                      " don't wrap lines
 set tabstop=4                   " a tab is four spaces
