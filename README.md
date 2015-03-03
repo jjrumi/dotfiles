@@ -6,11 +6,17 @@ Filename: .vimrc
 Maintainer: Juan Luis J. Rumí
 
 ### Installation
-Clone the repo with its submodules:
+1- Clone the repo with its submodules:
 ```
 $ git clone --recursive https://github.com/jjrumi/dotfiles.git ~/.dotfiles
 ```
-Open vim and execute :PluginInstall to install Vundle bundles.
+2- Link the user configuration
+```
+$ cd ~
+$ ln -s .dotfiles/.vimrc .vimrc
+$ ln -s .dotfiles/.vim .vim
+```
+3- Open vim and execute :PluginInstall to install Vundle bundles.
 
 
 Vastly inspired on:
