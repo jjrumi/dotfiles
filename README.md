@@ -7,7 +7,9 @@ Maintainer: Juan Luis J. Rumí
 
 ### Installation
 Clone the repo with its submodules:
+```
 $ git clone --recursive https://github.com/jjrumi/dotfiles.git ~/.dotfiles
+```
 Open vim and execute :PluginInstall to install Vundle bundles.
 
 
