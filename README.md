@@ -5,7 +5,11 @@ Filename: .vimrc
 
 Maintainer: Juan Luis J. Rumí
 
-### Installation
+### Installation
+0- Install vim from homebrew. More complete than base OSX vim:
+```
+$ brew update && brew install vim
+```
 1- Clone the repo with its submodules:
 ```
 $ git clone --recursive https://github.com/jjrumi/dotfiles.git ~/.dotfiles
