@@ -30,6 +30,7 @@ set backupdir=~/.vim/backup//   " Swap files out of the project root
 set directory=~/.vim/swap//
 set timeout timeoutlen=200 ttimeoutlen=100
 set mouse-=a        " Avoid mouse interaction
+set clipboard=unnamed   " Copy to clipboard
 
 ""
 " Theme / Colors
